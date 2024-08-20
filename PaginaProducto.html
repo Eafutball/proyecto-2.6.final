@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Producto</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+  />
+
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="Logo.css" />
+    <link rel="stylesheet" href="product-detail.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+
+
+</head>
+<body>
+
+    <header>
+        <img
+          src="endurance-essentials-favicon-color.png"
+          class="image-logo"
+          alt="Logo"
+        />
+      </header>
+
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand">
+           Endurance Essentials
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">
+                <i class="fas fa-home"></i> Inicio
+                <span class="sr-only">(current)</span>
+            </a>
+        
+            <!-- Opción de Carrito con indicador de cantidad -->
+            <a class="nav-item nav-link" href="compra-producto.html">
+                <i class="fas fa-shopping-cart"></i>
+                Carrito
+                <span class="cart-count">0</span> <!-- Número de elementos en el carrito -->
+            </a>
+        
+            <!-- Opción de Contacto -->
+            <a class="nav-item nav-link" href="contacts.html">
+                <i class="fas fa-envelope"></i> Contacto
+            </a>
+        
+            <!-- Opción de Preguntas Frecuentes -->
+            <a class="nav-item nav-link" href="faq.html">
+                <i class="fas fa-question-circle"></i> Preguntas Frecuentes
+            </a>
+
+            <a class="nav-item nav-link" href="about-me.html">
+                <i class="fas fa-user"></i> Sobre Mí
+            </a>
+          </div>
+        </div>
+      </nav>
+
+  <section class="product-info-and-images" style="padding: 50px;">
+    <div class="container">
+      <div class="card" style="background-color: #f5f5f5; border-radius: 16px;">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-lg-5 col-md-5 col-sm-12 mb-3">
+                      <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img src="https://www.bootdey.com/image/430x600/00CED1/000000" class="d-block w-100 rounded" alt="Product Image 1">
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="https://www.bootdey.com/image/430x600/00CED1/000000" class="d-block w-100 rounded" alt="Product Image 2">
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="https://www.bootdey.com/image/430x600/00CED1/000000" class="d-block w-100 rounded" alt="Product Image 3">
+                              </div>
+                              <!-- Add more carousel items as needed -->
+                          </div>
+                          <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-12">
+                      <h3 class="card-title">Rounded Chair</h3>
+                      <h6 class="card-subtitle mb-3 text-muted">Globe type chair for rest</h6>
+                      
+                      <h4 class="box-title">Descripcion del Producto</h4>
+                      <p class="mb-4">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. But the majority have suffered alteration in some form, by injected humour.</p>
+                      
+                      <h2 class="mb-4 precio">$153<small class="text-success"></small></h2>
+                      
+                      <button class="btn" data-toggle="tooltip" title="Add to cart" onclick="AgregarEnCarrito(this)">
+                          <i class="fa fa-shopping-cart"></i>
+                      </button>                    
+                  </div>
+                  <section class="general-info py-4">
+                    <div class="container">
+                      <h3 class="box-title mb-4">Información General del Producto</h3>
+                      <p class="section-description">
+                          Explora todos los detalles esenciales de nuestro producto para conocerlo a fondo. Aquí encontrarás especificaciones clave, características destacadas y otros datos importantes que te ayudarán a tomar una decisión informada. Desde materiales y dimensiones hasta instrucciones de cuidado, esta sección te ofrece una visión completa para que estés bien informado antes de hacer tu compra.
+                      </p>
+                                              <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-product">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Brand</th>
+                                        <td>Stellar</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Delivery Condition</th>
+                                        <td>Knock Down</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Seat Lock Included</th>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Type</th>
+                                        <td>Office Chair</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Style</th>
+                                        <td>Contemporary & Modern</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Wheels Included</th>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Upholstery Included</th>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Upholstery Type</th>
+                                        <td>Cushion</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Head Support</th>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Suitable For</th>
+                                        <td>Study & Home Office</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Adjustable Height</th>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Model Number</th>
+                                        <td>F01020701-00HT744A06</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Armrest Included</th>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Care Instructions</th>
+                                        <td>Handle With Care, Keep In Dry Place, Do Not Apply Any Chemical For Cleaning.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Finish Type</th>
+                                        <td>Matte</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Reviews Section -->
+                <section class="reviews py-4">
+                  <div class="container">
+                    <h3 class="box-title mb-4">Lo Que Dicen Nuestros Clientes</h3>
+                    <p class="section-subtitle">Descubre las opiniones y experiencias de quienes ya han probado nuestro producto. ¡Tu próxima compra podría estar respaldada por una reseña como la tuya!</p>                    <div class="review-list">
+                      <!-- Example of a review -->
+                      <div class="review bg-success">
+                          <div class="stars mb-2">
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star filled"></i>
+                          </div>
+                          <p>Great product! Totally worth the price.</p>
+                      </div>
+                      <div class="review bg-warning">
+                          <div class="stars mb-2">
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                          </div>
+                          <p>It's okay, but there are some issues.</p>
+                      </div>
+                      <div class="review bg-danger">
+                          <div class="stars mb-2">
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star filled"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                          </div>
+                          <p>Not satisfied with the product.</p>
+                      </div>
+                      <!-- Add more reviews as needed -->
+                    </div>
+                  </div>
+                </section>
+  
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+  
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5>Sobre Nosotros</h5>
+          <p>Somos una empresa dedicada a ofrecer productos de alta calidad para el deporte y la vida activa. Contamos con una amplia gama de productos diseñados para satisfacer tus necesidades.</p>
+        </div>
+        <div class="col">
+          <h5>Enlaces Rápidos</h5>
+          <ul>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Precios</a></li>
+                <li><a href="about-me.html">Sobre Nosotros</a></li>
+              </ul>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Contáctanos</h5>
+          <p>Email: eandreszambrano4@gmail.com</p>
+          <p>Teléfono: +87157693</p>
+          <p>Síguenos en:
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Endurance Essentials. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="product-detail.js"></script>
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

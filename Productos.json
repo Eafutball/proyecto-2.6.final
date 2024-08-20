@@ -1,0 +1,278 @@
+{
+  "productos": [
+    {
+      "id": 5,
+      "nombre": "Tabla de surf",
+      "categoria": "deportes acuáticos",
+      "imagenDestacada": "Imagen Tabla Surf 1.jpeg",
+      "precio": 399.99,
+      "stock": {
+        "online": true,
+        "tiendaFisica": false
+      },
+      "descripcion": "Tabla de surf para olas grandes, fabricada con materiales ligeros y diseño aerodinámico.",
+      "galeriaImagenes": [
+        "Imagen Tabla Surf 2.jpeg" ],
+      "tiemposEntrega": "Entrega en 7-10 días hábiles",
+      "gastosEnvio": "Envío internacional: $19.99",
+      "opcionesEntrega": ["Envío postal"],
+      "enlaceCambiosDevoluciones": "https://www.ripcurl.com/es/help/returns.html",
+      "enlaceContactoAyuda": "https://www.ripcurl.com/es/help/faq.html",
+      "garantia": "Garantía limitada de 6 meses.",
+      "resenaUsuarios": [
+        {
+          "valoracion": 4.8,
+          "comentario": "Una bicicleta excelente, muy robusta y perfecta para terrenos difíciles. La suspensión es de alta calidad y ofrece un manejo suave incluso en caminos accidentados. Muy recomendada para ciclistas que buscan durabilidad y rendimiento en condiciones exigentes."
+        },
+        {
+          "valoracion": 4.5,
+          "comentario": "Esta bicicleta ofrece un rendimiento sobresaliente. Los cambios son precisos y la geometría del marco proporciona una conducción cómoda. Ideal para aventuras en montaña. Sin embargo, el montaje inicial puede ser algo complicado si no tienes experiencia."
+        }
+      ],
+      "anioPublicacion": 2023,
+      "unidadesVendidas": 120,
+      "cantidad": 0,
+      "subtotal": 0
+
+    },
+
+    {
+      "id": 1,
+      "nombre": "Bicicleta de montaña",
+      "categoria": "bicicletas",
+      "imagenDestacada": "Imagen Bici 1.jpeg",
+      "precio": 549.99,
+      "stock": {
+        "online": true,
+        "tiendaFisica": true
+      },
+      "descripcion": "Bicicleta de montaña con cuadro de aluminio, suspensiones delanteras y cambios Shimano.",
+      "galeriaImagenes": [
+        "Imagen Bici 4.jpeg",
+        "Imagen Bici 2.jpeg"
+            ],
+      "tiemposEntrega": "Entrega en 4-6 días hábiles",
+      "gastosEnvio": "Gratis para pedidos superiores a $200",
+      "opcionesEntrega": ["Envío postal", "Recogida en tienda"],
+      "enlaceCambiosDevoluciones": "https://www.trekbikes.com/internationalspanish/es_IN_TL/inside_trek/warrantied_for_life/#:~:text=Garant%C3%ADa%20incondicional%20de%2030%20d%C3%ADas,o%20te%20reembolsen%20el%20dinero.",
+      "enlaceContactoAyuda": "https://www.trekbikes.com/internationalspanish/es_IN_TL/product_support/",
+      "garantia": "Garantía de por vida en el cuadro y 2 años en componentes.",
+      "resenaUsuarios": [
+        {
+          "valoracion": 4.8,
+          "comentario": "Una bicicleta excelente, muy robusta y perfecta para terrenos difíciles. La suspensión es de alta calidad y ofrece un manejo suave incluso en caminos accidentados. Muy recomendada para ciclistas que buscan durabilidad y rendimiento en condiciones exigentes."
+        },
+        {
+          "valoracion": 4.5,
+          "comentario": "Esta bicicleta ofrece un rendimiento sobresaliente. Los cambios son precisos y la geometría del marco proporciona una conducción cómoda. Ideal para aventuras en montaña. Sin embargo, el montaje inicial puede ser algo complicado si no tienes experiencia."
+        }
+      ],
+      "anioPublicacion": 2022,
+      "unidadesVendidas": 275,
+      "cantidad": 0,
+      "subtotal": 0
+    },
+
+    {
+      "id": 4,
+      "nombre": "Zapatillas de running",
+      "categoria": "calzado",
+      "imagenDestacada": "Zapatilla de Running 1.jpeg",
+      "precio": 99.99,
+      "stock": {
+        "online": true,
+        "tiendaFisica": true
+      },
+      "descripcion": "Zapatillas de running ideales para entrenamientos diarios, con tecnología de amortiguación avanzada.",
+      "galeriaImagenes": [
+        "Zapatilla de Running 2.jpeg"
+      ],
+      "tiemposEntrega": "Entrega en 3-5 días hábiles",
+      "gastosEnvio": "Envío estándar: $4.99",
+      "opcionesEntrega": ["Envío postal", "Recogida en tienda"],
+      "enlaceCambiosDevoluciones": "https://www.nike.com/es/help/a/como-hacer-devoluciones-ue",
+      "enlaceContactoAyuda": "https://www.nike.com/es/help/",
+      "garantia": "Garantía de 1 año por defectos de fabricación.",
+      "resenaUsuarios": [
+        {
+          "valoracion": 4.7,
+          "comentario": "Las zapatillas son cómodas y tienen un buen soporte. Perfectas para largas distancias. La amortiguación es excelente, lo que ayuda a reducir el impacto durante las carreras prolongadas."
+        },
+        {
+          "valoracion": 4.5,
+          "comentario": "Muy buenas zapatillas para correr. Ofrecen una gran estabilidad y tracción en diferentes superficies. El diseño es moderno y la ventilación es adecuada para mantener los pies frescos durante el ejercicio intenso."
+        }
+      ],
+      "anioPublicacion": 2021,
+      "unidadesVendidas": 452,
+      "cantidad": 0,
+      "subtotal": 0
+    },
+    {
+      "id": 6,
+      "nombre": "Pelota de baloncesto",
+      "categoria": "balones",
+      "imagenDestacada": "Bola Baloncesto 1.jpeg",
+      "precio": 24.99,
+      "stock": {
+        "online": true,
+        "tiendaFisica": true
+      },
+      "descripcion": "Pelota oficial de baloncesto, diseñada para un buen agarre y durabilidad en el juego.",
+      "galeriaImagenes": ["Bola Baloncesto 2.jpeg", "Bola Baloncesto 3.jpeg"],
+      "tiemposEntrega": "Entrega en 2-4 días hábiles",
+      "gastosEnvio": "Envío estándar: $3.99",
+      "opcionesEntrega": ["Envío postal", "Recogida en tienda"],
+      "enlaceCambiosDevoluciones": "https://spalding-basketball.com/es-es/pages/returns",
+      "enlaceContactoAyuda": "https://www.spalding.com/customer-service/general-help/contact-us",
+      "garantia": "Garantía de 1 año por defectos de fabricación.",
+      "resenaUsuarios": [
+        {
+          "valoracion": 4.5,
+          "comentario": "La pelota de baloncesto tiene un excelente bote y una gran durabilidad. La textura del material proporciona un buen agarre, ideal para partidos y entrenamientos intensos en interiores y exteriores. Se mantiene en buen estado incluso después de un uso frecuente."
+        },
+        {
+          "valoracion": 4.3,
+          "comentario": "Esta pelota de baloncesto ofrece un rendimiento sólido con un buen rebote y una construcción resistente. Sin embargo, el diseño podría mejorarse para ofrecer un mayor confort en el manejo. Es una opción confiable para jugadores que buscan calidad a un precio razonable."
+        }
+      ],
+      "anioPublicacion": 2021,
+      "unidadesVendidas": 374,
+      "cantidad": 0,
+      "subtotal": 0
+    },
+    {
+      "id": 7,
+      "nombre": "Casco de ciclismo",
+      "categoria": "accesorios",
+      "imagenDestacada": "Casco Ciclismo 1.jpeg",
+      "precio": 79.99,
+      "stock": {
+        "online": true,
+        "tiendaFisica": true
+      },
+      "descripcion": "Casco de ciclismo ligero y seguro, con ventilación ajustable y sistema de ajuste rápido.",
+      "galeriaImagenes": ["Casco Ciclismo 2.jpeg", "Casco Ciclismo 3.jpeg"],
+      "tiemposEntrega": "Entrega en 3-5 días hábiles",
+      "gastosEnvio": "Envío estándar: $4.99",
+      "opcionesEntrega": ["Envío postal", "Recogida en tienda"],
+      "enlaceCambiosDevoluciones": "https://bellracingstore.es/content/1-envios-y-devoluciones",
+      "enlaceContactoAyuda": "https://www.bellhelmets.com.co/preguntas-frecuentes",
+      "garantia": "Garantía de 2 años por defectos de fabricación.",
+      "resenaUsuarios": [
+        {
+          "valoracion": 4.6,
+          "comentario": "El casco es cómodo y ofrece buena protección. Ideal para ciclistas aficionados y profesionales. La ventilación es excelente, manteniendo la cabeza fresca incluso en rutas largas. Además, el ajuste es muy preciso, lo que garantiza un ajuste seguro y cómodo."
+        },
+        {
+          "valoracion": 4.4,
+          "comentario": "Este casco proporciona una gran seguridad y confort. La visera es útil para protegerse del sol y la lluvia. Aunque el diseño es algo básico, cumple perfectamente con su función y es muy duradero. Recomendado para quienes buscan calidad y protección a un buen precio."
+        }
+      ],
+      "anioPublicacion": 2020,
+      "unidadesVendidas": 628,
+      "cantidad":0
+
+    },
+    {
+      "id": 8,
+      "nombre": "Guantes de portero",
+      "categoria": "accesorios",
+      "imagenDestacada": "imagen guante portero.jpeg",
+      "precio": 49.99,
+      "stock": {
+        "online": true,
+        "tiendaFisica": true
+      },
+      "descripcion": "Guantes de portero profesionales con diseño ergonómico y palma de látex para un mejor agarre.",
+      "galeriaImagenes": ["guante portero 2.jpeg", "guante portero 3.jpeg"],
+      "tiemposEntrega": "Entrega en 2-3 días hábiles",
+      "gastosEnvio": "Envío estándar: $3.99",
+      "opcionesEntrega": ["Envío postal", "Recogida en tienda"],
+      "enlaceCambiosDevoluciones": "https://www.adidas.com/cr/es/returns.html",
+      "enlaceContactoAyuda": "https://www.adidas.es/ayuda",
+      "garantia": "Garantía de 1 año por defectos de fabricación.",
+      "resenaUsuarios": [
+        {
+          "valoracion": 4.7,
+          "comentario": "Los guantes son cómodos y ofrecen un buen agarre. Perfectos para partidos y entrenamientos."
+        },
+        {
+          "valoracion": 4.3,
+          "comentario": "Muy buenos guantes para entrenar. El material es resistente y el ajuste es adecuado, aunque me gustaría un poco más de amortiguación."
+        }
+      ],
+
+      "anioPublicacion": 2020,
+      "unidadesVendidas": 847,
+      "cantidad": 0,
+      "subtotal": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Raqueta de tenis profesional",
+      "categoria": "raquetas",
+      "imagenDestacada": "Tenis 1.jpeg",
+      "precio": 199.99,
+      "stock": {
+        "online": true,
+        "tiendaFisica": false
+      },
+      "descripcion": "Raqueta de tenis de gama alta, fabricada con materiales ligeros y diseño ergonómico.",
+      "galeriaImagenes": ["tenis 2.jpeg", "tenis 3.jpeg"],
+      "tiemposEntrega": "Entrega en 2-3 días hábiles",
+      "gastosEnvio": "Envío estándar: $5.99, Envío express: $12.99",
+      "opcionesEntrega": ["Envío postal"],
+      "enlaceCambiosDevoluciones": "https://www.tenniswarehouse-europe.com/custservice/returns.html?lang=es",
+      "enlaceContactoAyuda": "https://www.tennis-warehouse.com/custservice/",
+      "garantia": "Garantía de 1 año por defectos de fabricación.",
+      "resenaUsuarios": [
+        {
+          "valoracion": 4.6,
+          "comentario": "La raqueta tiene un balance perfecto, me ha ayudado a mejorar mi juego considerablemente."
+        },
+        {
+          "valoracion": 4.3,
+          "comentario": "Muy buena raqueta, aunque el grip podría ser más cómodo. Aún así, el rendimiento es excelente y ha mejorado mi precisión en el campo."
+        }
+      ],
+      "anioPublicacion": 2019,
+      "unidadesVendidas": 292,
+      "cantidad": 0,
+      "subtotal": 0
+    },
+    {
+      "id": 3,
+      "nombre": "Balón de fútbol profesional",
+      "categoria": "balones",
+      "imagenDestacada": "futbol 1.jpeg",
+      "precio": 29.99,
+      "stock": {
+        "online": true,
+        "tiendaFisica": true
+      },
+      "descripcion": "Balón de fútbol FIFA oficial, cosido a máquina con cubierta de cuero sintético resistente.",
+      "galeriaImagenes": ["futbol 2.jpeg"],
+      "tiemposEntrega": "Entrega en 1-2 días hábiles",
+      "gastosEnvio": "Gratis para todos los pedidos",
+      "opcionesEntrega": ["Envío postal", "Recogida en tienda"],
+      "enlaceCambiosDevoluciones": "https://store.fifa.com/es-es/content/cancellations-and-returns-policy",
+      "enlaceContactoAyuda": "https://support.store.fifa.com/es/support/solutions/articles/101000427349--c%C3%B3mo-contactarnos-",
+      "garantia": "Garantía de 6 meses por defectos de fabricación.",
+      "resenaUsuarios": [
+        {
+          "valoracion": 4.4,
+          "comentario": "Excelente balón, muy duradero y con un buen toque. Ideal para partidos de alta competencia."
+        },
+        {
+          "valoracion": 4.7,
+          "comentario": "Muy satisfecho con la compra. El balón tiene un gran equilibrio y resiste bien al uso intenso. Perfecto para entrenamientos y partidos. Lo recomendaría sin dudar."
+        }
+      ],
+      "anioPublicacion": 2018,
+      "unidadesVendidas": 463,
+      "cantidad": 0,
+      "subtotal": 0
+    }
+  ]
+}

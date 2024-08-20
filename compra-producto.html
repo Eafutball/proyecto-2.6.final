@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="Logo.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="shooping-cart.css" />
+    <link rel="stylesheet" href="payment..css" />
+
+
+
+
+
+  </head>
+  <body>
+    <header>
+      <img
+        src="endurance-essentials-favicon-color.png"
+        class="image-logo"
+        alt="Logo"
+      />
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-running"></i> Endurance Essentials
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">
+            <i class="fas fa-home"></i> Inicio
+            <span class="sr-only">(current)</span>
+        </a>
+    
+        <!-- Opción de Carrito con indicador de cantidad -->
+        <a class="nav-item nav-link" href="compra-producto.html">
+            <i class="fas fa-shopping-cart"></i>
+            Carrito
+            <span class="cart-count">0</span> <!-- Número de elementos en el carrito -->
+        </a>
+    
+        <!-- Opción de Contacto -->
+        <a class="nav-item nav-link" href="contacts.html">
+            <i class="fas fa-envelope"></i> Contacto
+        </a>
+    
+        <!-- Opción de Preguntas Frecuentes -->
+        <a class="nav-item nav-link" href="faq.html">
+            <i class="fas fa-question-circle"></i> Preguntas Frecuentes
+        </a>
+        <a class="nav-item nav-link" href="about-me.html">
+          <i class="fas fa-user"></i> Sobre Mí
+      </a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container px-3 my-5 clearfix">
+        <!-- Shopping cart table -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Carrito de Compra</h2>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered m-0">
+                    <thead>
+                      <tr>
+                        <!-- Establecer el ancho de las columnas -->
+                        <th class="text-center py-3 px-4" style="min-width: 400px;">Nombre del Producto y Detalles</th>
+                        <th class="text-right py-3 px-4" style="width: 100px;">Precio</th>
+                        <th class="text-center py-3 px-4" style="width: 120px;">Cantidad</th>
+                        <th class="text-right py-3 px-4" style="width: 100px;">Subtotal</th>
+                        <th class="text-center align-middle py-3 px-0" style="width: 40px;">
+                            <a href="#" class="shop-tooltip float-none text-light" title="" data-original-title="Eliminar carrito">
+                                <i class="ino ion-md-trash"></i>
+                            </a>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+            
+                      <tr>
+                        <td class="p-4">
+                          <div class="media align-items-center">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                            <div class="media-body">
+                              <a href="#" class="d-block text-dark">Product 1</a>
+                              <small>
+                                <span class="text-muted">Color:</span>
+                                <span class="ui-product-color ui-product-color-sm align-text-bottom" style="background:#e81e2c;"></span> &nbsp;
+                                <span class="text-muted">Size: </span> EU 37 &nbsp;
+                                <span class="text-muted">Ships from: </span> China
+                              </small>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$57.55</td>
+                        <td class="align-middle p-4"><input type="text" class="form-control text-center" value="2"></td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$115.1</td>
+                        <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                      </tr>
+            
+                      <tr>
+                        <td class="p-4">
+                          <div class="media align-items-center">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                            <div class="media-body">
+                              <a href="#" class="d-block text-dark">Product 2</a>
+                              <small>
+                                <span class="text-muted">Color:</span>
+                                <span class="ui-product-color ui-product-color-sm align-text-bottom" style="background:#000;"></span> &nbsp;
+                                <span class="text-muted">Storage: </span> 32GB &nbsp;
+                                <span class="text-muted">Warranty: </span> Standard - 1 year &nbsp;
+                                <span class="text-muted">Ships from: </span> China
+                              </small>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$1049.00</td>
+                        <td class="align-middle p-4">
+                            <div class="quantity-control">
+                                <button id="decrement">-</button>
+                                <input type="number" id="quantity" class="form-control text-center" value="1" min="1" max="10" step="1">
+                                <button id="increment">+</button>
+                            </div>
+                        </td>                        <td class="text-right font-weight-semibold align-middle p-4">$1049.00</td>
+                        <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger remove-item" title="" data-original-title="Remove">×</a></td>
+                      </tr>
+            
+                      <tr>
+                        <td class="p-4">
+                          <div class="media align-items-center">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                            <div class="media-body">
+                              <a href="#" class="d-block text-dark">Product 3</a>
+                              <small>
+                                <span class="text-muted">Ships from: </span> Germany
+                              </small>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$20.55</td>
+                        <td class="align-middle p-4"><input type="text" class="form-control text-center" value="1"></td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$20.55</td>
+                        <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                      </tr>
+            
+                    </tbody>
+                  </table>
+                </div>
+                <!-- / Shopping cart table -->
+            
+                <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
+                  <div class="mt-4">
+                    <div class="text-right mt-4 container-total">
+                      <label class="text-muted font-weight-normal m-0">Precio Total</label>
+                      <div class="text-large total"><strong id="totalPrice"></strong></div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="float-right"> <a href="index.html#productos"> <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Volver a la tienda</button> </a> 
+                  <a href="#pago"> <button type="button" class="btn btn-lg btn-primary mt-2" id="Comprar">Finalizar compra</button> </a> 
+                  
+                </div>
+            
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="bg-contact100" id="pago">
+        <div class="container-contact100">
+            <div class="wrap-contact100">
+                <form class="contact100-form validate-form" id="paymentForm">
+                    <span class="contact100-form-title">
+                        Formulario de Pago
+                    </span>
+                    
+                    <!-- Nombre Completo -->
+                    <div class="wrap-input100 validate-input" data-validate="Nombre es requerido">
+                        <input class="input100 Nombre" type="text" name="name" placeholder="Nombre Completo">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <!-- Correo Electrónico -->
+                    <div class="wrap-input100 validate-input" data-validate="Correo electrónico válido es requerido: ex@abc.xyz">
+                        <input class="input100 correo-electronico" type="text" name="email" placeholder="Correo Electrónico">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <!-- Dirección -->
+                    <div class="wrap-input100 validate-input" data-validate="Dirección es requerida">
+                        <input class="input100 direccion" type="text" name="address" placeholder="Dirección">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <!-- Opciones de Envío -->
+                    <div class="wrap-input100">
+                        <label class="input-label">Método de Envío</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="shipping_method" value="Envio Postal" checked>
+                                Envío Postal
+                            </label>
+                            <label>
+                                <input type="radio" name="shipping_method" value="Recoger En Tienda">
+                                Recogido en Tienda
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen de Tipo de Tarjeta -->
+                    <div class="wrap-input100">
+                        <label for="card_image" class="input-label">Tipo de Tarjeta</label>
+                        <div id="card_image" class="card-image">
+                            <img src="https://via.placeholder.com/100x50?text=Tarjeta" alt="Tipo de Tarjeta" />
+                        </div>
+                    </div>
+                    
+                    <!-- Número de Tarjeta -->
+                    <div class="wrap-input100 validate-input" data-validate="Número de tarjeta es requerido">
+                        <input class="input100 tarjeta" type="text" name="card_number" placeholder="Número de Tarjeta">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <!-- Fecha de Vencimiento -->
+                    <div class="wrap-input100 validate-input" data-validate="Fecha de vencimiento es requerida">
+                        <input class="input100" type="text" name="expiry_date" placeholder="Fecha de Vencimiento (MM/AA)">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <!-- CVV -->
+                    <div class="wrap-input100 validate-input" data-validate="CVV es requerido">
+                        <input class="input100" type="text" name="cvv" placeholder="CVV">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <!-- Total -->
+                    <div class="wrap-input100">
+                        <input class="input100 total-input" type="text" name="total" placeholder="Total" disabled>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <!-- Botón de Pago -->
+                    <div class="container-contact100-form-btn">
+                        <button class="contact100-form-btn pagar" type="button" onclick="guardarFactura()">
+                            Pagar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+      
+    
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5>Sobre Nosotros</h5>
+            <p>Somos una empresa dedicada a ofrecer productos de alta calidad para el deporte y la vida activa. Contamos con una amplia gama de productos diseñados para satisfacer tus necesidades.</p>
+          </div>
+          <div class="col">
+            <h5>Enlaces Rápidos</h5>
+            <ul>
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Precios</a></li>
+                <li><a href="about-me.html">Sobre Nosotros</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Contáctanos</h5>
+            <p>Email: eandreszambrano4@gmail.com</p>
+            <p>Teléfono: +87157693</p>
+            <p>Síguenos en:
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Endurance Essentials. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+    <script src="carrito.js" ></script>
+
+  </body>
+</html>

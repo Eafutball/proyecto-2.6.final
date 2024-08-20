@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&family=Oswald:wght@200..700&display=swap');
+
+/* Sección de Reseñas */
+.reviews-section {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada para la sección */
+}
+
+.section-title {
+    color: #333;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 1000vh;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada para las tarjetas */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.review-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente si el contenedor tiene una altura fija */
+    overflow: hidden; /* Asegura que cualquier parte de la imagen fuera del contenedor no se muestre */
+    width: 200px; /* Ancho fijo para el contenedor */
+    height: 200px; /* Altura fija para el contenedor */
+    border-radius: 50%; /* Bordes redondeados para el contenedor */
+}
+
+.avatar img {
+    border-radius: 50%; /* Bordes redondeados para crear una imagen circular */
+    width: 100%; /* Ajusta el ancho al contenedor */
+    height: 100%; /* Ajusta la altura al contenedor */
+    object-fit: cover; /* Cubre el contenedor sin deformar la imagen */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+}
+
+
+
+.reviews {
+    flex: 2;
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Estilos para la reseña */
+.review {
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada para reseñas */
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review .stars {
+    font-size: 1.5em;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Estilos para las estrellas */
+.stars i {
+    color: #ddd;
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+.stars .filled {
+    color: #ffd700;
+}
+
+/* Colores de fondo de la reseña según la evaluación */
+.review.bg-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.review.bg-warning {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.review.bg-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Estilo para los encabezados de las secciones */
+.box-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada para títulos */
+}
+
+.section-description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 24px;
+    padding: 0 10px;
+    text-align: justify;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada para descripciones */
+}
+
+/* Contenedor de la sección */
+.section-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la tabla de productos */
+.table-product {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Fondo blanco para la tabla */
+}
+
+.table-product th {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+}
+
+.table-product td {
+    padding: 12px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.6;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada para descripciones */
+
+}
+
+.table-product tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.table-product tr:hover {
+    background-color: #e9ecef; /* Color más suave para hover */
+}
+
+/* Estilo para los botones */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: hsl(210, 100%, 15%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada para botones */
+}
+
+.btn i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: hsl(208, 75%, 55%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.btn:disabled {
+    background-color: #c0c0c0;
+    color: #6c757d;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.65;
+}

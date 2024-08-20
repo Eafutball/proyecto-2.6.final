@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&family=Oswald:wght@200..700&display=swap');
+
+/* Background for Contact Section */
+.bg-contact100 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container for the Form */
+.container-contact100 {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 40px;
+    border-radius: 12px; /* Bordes redondeados para suavizar el contenedor */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para el contenedor */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Borde sutil */
+}
+
+/* Form Title Styles */
+.contact100-form-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: o auto;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada */
+    text-align: center;
+}
+
+/* Input Styles */
+.wrap-input100 {
+    position: relative;
+    margin-bottom: 20px; /* Espacio ajustado entre campos */
+}
+
+.input100 {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fafafa; /* Fondo gris muy claro para los campos */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada */
+}
+
+.input100:focus {
+    border-color: #007bff;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Symbol/Icon Styles in Input */
+.symbol-input100 {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Button Styles */
+.container-contact100-form-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact100-form-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff; /* Color azul principal */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada */
+}
+
+.contact100-form-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact100-form-btn:active {
+    background-color: #004080;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styles */
+.card-image {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.card-image img {
+    max-width: 130px;
+    height: auto;
+}
+
+/* Shipping Method Styles */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Oswald', sans-serif; /* Fuente estilizada */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #007bff; /* Color de selección de los botones de radio */
+}

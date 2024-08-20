@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&display=swap');
+
+.navbar {
+  background-color: hsl(210, 100%, 15%); /* Deep blue background for the navbar */
+  padding: 0.5rem 1rem; /* Padding for better look */
+  font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue font to the navbar */
+}
+
+/* Styles for the navbar brand */
+.navbar-brand {
+  color: #f5f5f5 !important; /* White color for the brand */
+  font-size: 1.8rem; /* Larger font size for prominence */
+  font-weight: bold; /* Bold font to make it stand out */
+  display: flex; /* Centering brand vertically */
+  align-items: center; /* Vertical alignment for the brand */
+  font-family: 'Bebas Neue', cursive; /* Apply Marck Script font to the brand */
+  gap: 10px;
+}
+
+/* Styles for the toggler button */
+.navbar-toggler {
+  border: none; /* Remove the border */
+  padding: 0.25rem 0.5rem; /* Adjust padding for the button */
+  background-color: transparent; /* Transparent background for better integration */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,...'); /* Replace with your custom icon if needed */
+}
+
+/* Styles for the collapsible menu items */
+.navbar-nav {
+  margin-left: auto; /* Push menu items to the right */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue font to the menu items */
+}
+
+.navbar-nav .nav-item {
+  margin: 0 0.75rem; /* Add horizontal margin between items */
+}
+
+/* Styles for navigation links */
+.navbar-nav .nav-link {
+  color: #f5f5f5 !important; /* White color for links */
+  font-size: 1.2rem; /* Slightly larger font size for better readability */
+  font-weight: 500; /* Medium font weight */
+  padding: 0.5rem 1rem; /* Padding for better click area */
+  border-radius: 0.3rem; /* Slightly more rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Center icon and text vertically */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: hsl(208, 75%, 45%); /* Slightly lighter blue on hover */
+  color: #ffffff; /* Ensure text remains white */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Bold text for the active link */
+  background-color: hsl(208, 75%, 60%); /* Lighter blue for the active link background */
+  border-radius: 0.3rem; /* Consistent border-radius with other links */
+}
+
+.navbar-nav .nav-link.disabled {
+  color: #6c757d; /* Gray color for disabled links */
+  pointer-events: none; /* Disable pointer events */
+  cursor: not-allowed; /* Show "not-allowed" cursor for disabled links */
+}
+
+/* Add styles for icons if using Font Awesome or similar */
+.navbar-nav .nav-link i {
+  margin-right: 0.75rem; /* Space between icon and text */
+  font-size: 1.4rem; /* Adjust icon size */
+}
+
+/* Styles for cart count badge */
+.navbar-nav .nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px; /* Adjust as needed */
+  right: -10px; /* Adjust as needed */
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.9rem; /* Slightly smaller font size */
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  min-width: 20px; /* Minimum width for consistency */
+  height: 20px; /* Consistent height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

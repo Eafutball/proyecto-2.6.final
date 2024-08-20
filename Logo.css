@@ -1,0 +1,12 @@
+.image-logo {
+    width: 80%; /* Ancho relativo */
+    max-width: 300px; /* Máximo ancho en píxeles */
+    height: max-content; /* Altura automática para mantener la proporción */
+    margin: 0 auto;
+    display: block;
+}
+
+
+header{
+    padding: 10px;
+}

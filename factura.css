@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #343a40;
+    --background-color: #f8f9fa;
+    --border-color: #dee2e6;
+    --text-color: #495057;
+    --highlight-color: #343a40;
+}
+
+.invoice-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px; /* Bordes ligeramente más redondeados */
+    background-color: #ffffff; /* Asegura que el fondo sea blanco puro */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Oswald', sans-serif; /* Fuente para una apariencia moderna */
+    color: var(--text-color); /* Color de texto consistente */
+}
+
+.invoice-container h1, 
+.invoice-container h2, 
+.invoice-container h3, 
+.invoice-container p {
+    margin: 0; /* Elimina márgenes predeterminados para un espaciado consistente */
+}
+
+.invoice-container h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--highlight-color); /* Resalta el título principal */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.invoice-container h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--secondary-color); /* Resalta subtítulos */
+    margin-bottom: 15px; /* Espacio debajo de subtítulos */
+}
+
+.invoice-container h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--secondary-color); /* Coloreará subtítulos secundarios */
+    margin-bottom: 10px; /* Espacio debajo de subtítulos secundarios */
+}
+
+.invoice-container p {
+    font-size: 1rem;
+    line-height: 1.6; /* Mejorar la legibilidad */
+    color: var(--text-color); /* Color de texto para párrafos */
+    margin-bottom: 10px; /* Espacio inferior en párrafos */
+}
+
+
+.invoice-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px; /* Aumenta el espaciado inferior para una separación más clara */
+    padding-top: 20px; /* Añade un poco de espaciado superior para equilibrio */
+    border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
+    background-color: #f8f9fa; /* Fondo gris claro para destacar el encabezado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para una separación suave del contenido */
+}
+
+.invoice-header h1 {
+    font-size: 2.2rem; /* Tamaño de fuente consistente */
+    color: var(--secondary-color); /* Color del texto principal */
+    font-weight: 700; /* Negrita para mayor énfasis */
+    margin: 0; /* Elimina el margen para mantener el espaciado controlado */
+    line-height: 1.2; /* Mejora la legibilidad del texto */
+}
+
+.invoice-header p {
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    color: var(--text-color); /* Color de texto consistente */
+    margin: 5px 0; /* Espaciado consistente entre líneas de texto */
+}
+
+
+.invoice-details, .invoice-summary {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--background-color);
+}
+
+.invoice-details h3, .invoice-summary h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif; /* Fuente para subtítulos */
+}
+
+.invoice-details p, .invoice-summary p {
+    margin: 8px 0;
+    color: var(--text-color);
+    font-size: 1.05rem;
+}
+
+.invoice-details table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.invoice-details table th, .invoice-details table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.invoice-summary {
+    border-top: 2px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.invoice-summary p {
+    font-size: 1.3rem;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif; /* Fuente para texto en negrita */
+}

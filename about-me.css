@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&display=swap');
+
+:root {
+    --primary-color: hsl(210, 100%, 15%);
+    --primary-color-hover: hsl(210, 100%, 25%);
+    --secondary-color: hsl(0, 0%, 60%);
+    --text-color: #f5f5f5;
+    --border-color: hsl(0, 0%, 85%);
+    --background-color: hsl(0, 0%, 10%);
+}
+
+.correo{
+    font-family: 'Oswald', sans-serif; /* Fuente para el texto secundario */
+    color:  var(--primary-color);
+}
+
+.correo-text{
+    font-family: 'Oswald', sans-serif; /* Fuente para el texto secundario */
+    color:  var(--text-color);
+}
+
+
+
+/* Imagen redondeada y con borde */
+.img-fluid.rounded-circle {
+    border: 5px solid var(--border-color);
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-fluid.rounded-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo para el título principal y texto secundario */
+.display-4.fw-bold {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif; /* Fuente para el texto secundario */
+    margin-bottom: 1rem; /* Añadido margen inferior para separación */
+}
+
+.text-secondary.fs-4 {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    font-family: 'Oswald', sans-serif; /* Fuente para el texto secundario */
+    margin-bottom: 1rem; /* Añadido margen inferior para separación */
+}
+
+/* Estilo para las líneas horizontales */
+hr.text-secondary {
+    border-color: var(--secondary-color);
+    border-width: 2px;
+    margin: 1.5rem auto;
+    width: 50%;
+}
+
+/* Estilo para el botón de contratación */
+.btn-primary.btn-lg {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Oswald', sans-serif; /* Fuente para el botón */
+}
+
+.btn-primary.btn-lg:hover {
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para la información de contacto */
+.text-md-start p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Oswald', sans-serif; /* Fuente para el texto secundario */
+}
+
+/* Estilo para enlaces */
+.text-primary {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Oswald', sans-serif; /* Fuente para enlaces */
+}
+
+.text-primary:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+/* Espaciado adicional para dispositivos móviles */
+@media (max-width: 767px) {
+    .mb-md-0 {
+        margin-bottom: 0 !important;
+    }
+    
+    .display-4.fw-bold {
+        font-size: 2rem;
+    }
+
+    .text-secondary.fs-4 {
+        font-size: 1.125rem;
+    }
+}
